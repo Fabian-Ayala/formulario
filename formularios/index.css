@@ -1,0 +1,136 @@
+* {
+    font-family: sans-serif;
+    font-weight: 100;
+    margin: 0;
+    padding: 0;
+}
+.nav {
+    background-color: slateblue;
+}
+.nav__li {
+    display: inline-block;
+    padding: 12px;
+    color: white;
+    }
+.nav__li:hover > a{
+    color: #bbb;
+}
+.nav__li >:hover {
+    color: #bbb;
+}
+.nav__li a{
+    color: white;
+    text-decoration: none;
+}
+.nav__li i{
+    box-sizing: border-box;
+    text-align: right;
+    margin-right: 5px;
+}
+
+.flex_container1 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 53.6%;
+}
+.flex_container2 {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap-reverse;
+    width: 53.6%;
+}
+.flex_container2_b {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    width: 53.6%;
+}
+.flex_container5 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+.flex_container6 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+.flex_container7 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+.flex_container8 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.flex_container9 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 400px;
+}
+.flex_container10 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    height: 400px;
+}
+.flex_container11 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    height: 400px;
+}
+.flex_container12 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    height: 400px;
+}
+.flex_container3 {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.flex_container4 {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 500%;
+}
+
+.red {
+    width: 80px;
+    height: 80px;
+    background-color: red;
+    margin: 5px;
+}
+.blue {
+    width: 80px;
+    height: 80px;
+    background-color: blue;
+    margin: 5px;
+}
+.green {
+    width: 80px;
+    height: 80px;
+    background-color: green;
+    margin: 5px;
+}
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
