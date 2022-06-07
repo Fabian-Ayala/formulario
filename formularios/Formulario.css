@@ -4,7 +4,11 @@
     padding: 0;
     color: white
 }
+img {
+    margin: 0px;
+}
 .flex-container {
+    margin: 0px;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -14,7 +18,7 @@
 }
 h3 {
     margin-top: 50px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     display: flex;
     justify-content: center;
 }
@@ -30,6 +34,7 @@ h3 {
 .form__button {
     display: flex;
     flex-direction: row;
+    margin: 5px;
 }
 .form__checkbox {
     display: flex;
@@ -53,11 +58,24 @@ h3 {
     padding: 5px;
     margin: 10px;
     background-color: blue;
+    border-radius: 4px;
+    border: 1px solid blue;
+}
+.form__input:hover {
+    background-color: rgb(19, 19, 182);
+    border: 1px solid rgb(19, 19, 182);
 }
 .form__input__submit {
     height: 45px;
     width: 25%;
-    background-color: grey;
+    margin: 10px;
+    background-color: rgb(206, 39, 39);
+    border-radius: 4px;
+    border: 1px solid rgb(206, 39, 39);
+}
+.form__input__submit:hover {
+    background-color: rgb(152, 21, 21);
+    border: 1px solid rgb(152, 21, 21);
 }
 .form__section__button {
     display: flex;
@@ -69,5 +87,14 @@ h3 {
     padding: 5px;
     margin: 10px;
     background-color: black;
+    border: 2px solid rgb(3, 43, 3);
+    border-top: 0px solid black;
+    border-left: 0px solid black;
+    border-right: 0px solid black;
+}
+.form__input__text:focus{
+    background-color: rgb(12, 12, 12);
+    outline: none;
+    border-radius: 4px;
     border: 2px solid rgb(3, 43, 3);
 }
