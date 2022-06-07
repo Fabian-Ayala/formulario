@@ -2,10 +2,16 @@
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
-    color: white
+    color: white;
+    z-index: 100
+}
+.undertalelog {
+    display: flex;
+    justify-content: center;
+    transform: scale(6.3);
 }
 img {
-    margin: 0px;
+    margin-top: 25px;
 }
 .flex-container {
     margin: 0px;
