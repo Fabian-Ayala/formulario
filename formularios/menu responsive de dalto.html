@@ -7,17 +7,22 @@
         <script src="https://kit.fontawesome.com/33ac3981e4.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <header>
-            <nav class="nav">
-                <ul class="nav__ul">
-                    <li class="nav__li"><i class="fas fa-house"></i><a href="a">Inicio</a></li>
-                    <li class="nav__li"><i class="fas fa-user-group"></i><a href="a">Sobre Nosotros</a></li>
-                    <li class="nav__li"><i class="fas fa-dollar sign"></i><a href="a">Gana Dinero</a></li>
-                    <li class="nav__li"><i class="fas fa-question-circle"></i><a href="a">Ayuda</a></li>
-                </ul>
-            </nav>
-        </header>
-        <h4>FLEX ROW (WRAP)</h4>
+        <div>
+            <h1>FLEXBOX MODEL</h1>
+        </div>
+        <h2> Display: flex<h2/>
+            <p>Flex es uno de los nuevos valores HTML5 para propiedad CSS display, que nos permite maquetar nuestras páginas web de una manera mucho más fácil de lo que se hacía con la forma tradicional, en la que utilizábamos propiedades como float, position, entre otras.
+            </p>
+            <p>En Flex, tenemos un contenedor (contenedor Flex/padre) que es el elemento que contiene la propiedad "display:flex".
+            </p>
+            <p>Desde ese contenedor podremos especificar la alineación y el tamaño de los elementos que hay dentro (elementos hijos) y distribuir el espacio restante que hay entre estos, todo esto en ambas direcciones, ya sea horizontal o verticalmente. Es decir, podemos distribuir los elementos que contiene el contenedor padre sin poner nada dentro de los elementos hijos.
+            </p>
+        <h3>FLEX-DIRECTION</h3>
+        <p>La propiedad CSS flex-direction especifica cómo colocar los objetos flexibles en el contenedor flexible definiendo el eje principal (Z o Y) y la dirección (normal o al revés).
+     </p>
+     <h4>Flex-direction: RAW</h4>
+     <p>Elementos alineados del primero al último (normal) en el eje X (horizontal)</p>
+     <p>Ej: *Vease: caja azul = primer elemento; caja verde = ultimo elmento</p>
         <div class="flex_container1">
             <div class="blue"></div>
             <div class="red"></div>
@@ -26,7 +31,9 @@
             <div class="red"></div>
             <div class="green"></div>
         </div>
-        <H4>FLEX ROW-REVERSE (WRAP-REVERSE)</H4>
+        <h3>Flex-direction: RAW-REVERSE</h3>
+        <p>Elementos alineados del último al primero (al reves) en el eje X (horizontal)</p>
+        <p>Ej:</p>
         <div class="flex_container2">
             <div class="blue"></div>
             <div class="red"></div>
@@ -35,16 +42,30 @@
             <div class="red"></div>
             <div class="green"></div>
         </div>
-        <h4>FLEX ROW-REVERSE (NOWRAP)</h4>
-        <div class="flex_container2_b">
-            <div class="blue"></div>
-            <div class="red"></div>
-            <div class="red"></div>
-            <div class="red"></div>
-            <div class="red"></div>
-            <div class="green"></div>
+        <h3>Flex-direction: COLUMN & COLUMN-REVERSE</h3>
+        <p>Elementos alineados en el eje Y (vertical) del primero al último (1°) y del último al primero (2°).</p>
+        <p>Ej:</p>
+        <div class="column">
+        <H4>FLEX COLUMN</H4>
+        <div class="flex_container3">
+        <div class="blue"></div>
+        <div class="red"></div>
+        <div class="red"></div>
+        <div class="red"></div>
+        <div class="red"></div>
+        <div class="green"></div>
         </div>
-        <h4>JUSTIFY-CONTENT: Center</h4>
+        <h4>FLEX COLUMN-REVERSE</h4>
+        <div class="flex_container4">
+        <div class="blue"></div>
+        <div class="red"></div>
+        <div class="red"></div>
+        <div class="red"></div>
+        <div class="red"></div>
+        <div class="green"></div>
+        </div>
+    </div>
+        <h4>JUSTIFY-CONTENT</h4>
         <div class="flex_container5">
             <div class="blue"></div>
             <div class="red"></div>
@@ -101,24 +122,7 @@
             <div class="green"></div>
         </div>
         <div class="center">
-        <H4>FLEX COLUMN</H4>
-            <div class="flex_container3">
-            <div class="blue"></div>
-            <div class="red"></div>
-            <div class="red"></div>
-            <div class="red"></div>
-            <div class="red"></div>
-            <div class="green"></div>
-            </div>
-            <h4>FLEX COLUMN-REVERSE</h4>
-            <div class="flex_container4">
-            <div class="blue"></div>
-            <div class="red"></div>
-            <div class="red"></div>
-            <div class="red"></div>
-            <div class="red"></div>
-            <div class="green"></div>
-            </div>
+
         </div>
 
 
