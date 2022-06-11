@@ -10,7 +10,7 @@
         <div>
             <h1>FLEXBOX MODEL</h1>
         </div>
-        <h2> Display: flex<h2/>
+        <h2> Display: flex<h2>
             <p>Flex es uno de los nuevos valores HTML5 para propiedad CSS display, que nos permite maquetar nuestras páginas web de una manera mucho más fácil de lo que se hacía con la forma tradicional, en la que utilizábamos propiedades como float, position, entre otras.
             </p>
             <p>En Flex, tenemos un contenedor (contenedor Flex/padre) que es el elemento que contiene la propiedad "display:flex".
@@ -31,7 +31,7 @@
             <div class="red"></div>
             <div class="green"></div>
         </div>
-        <h3>Flex-direction: RAW-REVERSE</h3>
+        <h4>Flex-direction: RAW-REVERSE</h4>
         <p>Elementos alineados del último al primero (al reves) en el eje X (horizontal)</p>
         <p>Ej:</p>
         <div class="flex_container2">
@@ -42,7 +42,7 @@
             <div class="red"></div>
             <div class="green"></div>
         </div>
-        <h3>Flex-direction: COLUMN & COLUMN-REVERSE</h3>
+        <h4>Flex-direction: COLUMN & COLUMN-REVERSE</h4>
         <p>Elementos alineados en el eje Y (vertical) del primero al último (1°) y del último al primero (2°).</p>
         <p>Ej:</p>
         <div class="column">
@@ -65,28 +65,44 @@
         <div class="green"></div>
         </div>
     </div>
-        <h4>JUSTIFY-CONTENT</h4>
+        <h3>JUSTIFY-CONTENT</h3>
+        <p>La propiedad CSS justify-content define cómo el navegador distribuye el espacio entre y alrededor de los items flex, a lo largo del eje principal de su contenedor.
+        </p>
+        <h4>justify-content: CENTER</h4>
+        <P>Los items flex son centrados en el eje X.</P>
         <div class="flex_container5">
             <div class="blue"></div>
             <div class="red"></div>
             <div class="red"></div>
             <div class="green"></div>
         </div>
-        <h4>JUSTIFY-CONTENT: Space-around</h4>
+        <h4>Justify-content: SPACE-AROUND</h4>
+        <p>Los items flex se alinean uniformemente de tal manera que el espacio entre dos items adyacentes es el mismo. El espacio vacío anterior al primer item y posterior al último item equivale a la mitad del espacio entre dos items adyacentes. Cada elemento posee el mismo espacio alrededor suyo.</p>
         <div class="flex_container6">
             <div class="blue"></div>
             <div class="red"></div>
             <div class="red"></div>
             <div class="green"></div>
         </div>
-        <h4>JUSTIFY-CONTENT: Space-between</h4>
+        <h4>Justify-content: SPACE-BETWEEN</h4>
+        <p>Los items flex se distribuyen uniformemente sobre la línea. El espaciamiento se hace de tal manera que el espacio adyacente entre dos items es el mismo. El borde del comienzo principal y el borde del final principal se alinean al ras con el borde del primer y último item respectivamente. Los elementos tienen el mismo espacio entre si salvo al principio y al final que se encuentran pegados al margen.
+        </p>
         <div class="flex_container7">
             <div class="blue"></div>
             <div class="red"></div>
             <div class="red"></div>
             <div class="green"></div>
         </div>
-        <h4>JUSTIFY-CONTENT: Space-evenly</h4>
+        <h4>Justify-content: FLEX-START</h4>
+        <p>Los items flex se colocan comenzando desde el comienzo principal. El margen del primer item es alineado al ras con el borde del comienzo principal de la línea y cada item siguiente es alineado al ras con el precedente.</p>
+        <div class="flex_container7_5">
+            <div class="blue"></div>
+            <div class="red"></div>
+            <div class="red"></div>
+            <div class="green"></div>
+        </div>
+        <h4>Justify-content: FLEX-END</h4>
+        <p>Los items flex se colocan comenzando desde el final principal. El margen del último item es alineado al ras con el borde del final principal de la línea y cada item precedente es alineado al ras con el siguiente.</p>
         <div class="flex_container8">
             <div class="blue"></div>
             <div class="red"></div>
