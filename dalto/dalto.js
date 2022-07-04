@@ -1,3 +1,9 @@
-let numero1 = 13;
-let numero2 = 23;
-document.write(numero1 == numero2);
+let animales = ["perro", "gato", "pez"]
+
+for (animal of animales) {   
+    if (animal == "gato"){
+        document.write(animal + "<br>");
+    }
+}
+
+
