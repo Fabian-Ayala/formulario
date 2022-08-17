@@ -1,9 +1,8 @@
-let animales = ["perro", "gato", "pez"]
+const li = document.createElement("li");
+const listaDinamica = document.getElementById("#lista")
+li.textContent = "elemento desde js";
+console.log(li);
+console.log (listaDinamica);
 
-for (animal of animales) {   
-    if (animal == "gato"){
-        document.write(animal + "<br>");
-    }
-}
-
+listaDinamica.appendChild(li)
 

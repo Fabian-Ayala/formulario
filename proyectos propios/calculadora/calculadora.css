@@ -1,0 +1,41 @@
+body {
+    background-color: blue;
+}
+.container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.calculadora {
+    background-color: aqua;
+    width: 300px;
+    height: 406px;
+    border-radius: solid 15px black;
+}
+.resultado_anterior {
+    width: 294px;
+    height: 57px;
+    margin: 3px;
+    margin-bottom: 0;
+    background-color: green
+}
+.resultado_actual {
+     width: 294px;
+     height: 57px;
+     margin: 3px;
+     margin-top: 0;
+     background-color: green   
+}
+button {
+    height: 50px;
+    width: 65px;
+    margin: 3px;
+}
+.linea_5 {
+    width:227px;
+    height: 57px;
+}
+
+
+
