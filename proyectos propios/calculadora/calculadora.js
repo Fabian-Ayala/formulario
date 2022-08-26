@@ -19,6 +19,7 @@ const boton9 = document.querySelector(".bot9");
 const boton0 = document.querySelector(".bot0");
 const botonPunto = document.querySelector(".botPunto");
 
+const botonReset = document.querySelector("botReset");
 const botonSuma = document.querySelector(".botSuma");
 const botonResta = document.querySelector(".botResta");
 const botonMulti = document.querySelector(".botMulti");
@@ -61,6 +62,7 @@ botonPunto.addEventListener("click", () => {
 })
 
 
+
 botonSuma.addEventListener("click", () => {
       resActual.textContent = resActual.textContent + "+"
 })
@@ -78,6 +80,7 @@ botonIgual.addEventListener("click", () => {
     const pepitoR = resActual.textContent.split("-")
     const pepitoM = resActual.textContent.split("*")
     const pepitoD = resActual.textContent.split("/")
+
     // console.log(pepitoS)
     // console.log(pepitoR) 
     // console.log(pepitoM)
@@ -86,15 +89,37 @@ botonIgual.addEventListener("click", () => {
                 return parseInt(stringNumero)
     })
     console.log(operacionSuma)
-    debugger;resActual.textContent = sumar(operacionSuma[0], operacionSuma[1])
-    
+
+    if(pepitoS.length == 2){
+     // console.log(pepitoS.length)
+    resActual.textContent = sumar(operacionSuma[0], operacionSuma[1])
+    }
+    else if(pepitoR.length == 2){
     const operacionResta = pepitoR.map((stringNumero) => {
         return parseInt(stringNumero)
-})
-    console.log(operacionResta)
+     })
+     //     console.log(operacionResta)
     resActual.textContent = restar(operacionResta[0], operacionResta[1])
+     }
+     else if(pepitoM.length == 2){
+     const operacionMulti = pepitoM.map((stringNumero) => {
+          return parseInt(stringNumero)
+     })
+     resActual.textContent = multiplicar(operacionMulti[0], operacionMulti[1])
+     }
+     else if(pepitoD.length == 2){
+     const operacionDiv = pepitoD.map((stringNumero) => {
+          return parseInt(stringNumero)
+     })
+     resActual.textContent = dividir(operacionDiv[0], operacionDiv[1])
+     }
+     else {
+          resActual.textContent = (" SINTAX ERROR")
+     }
 })
-
+botonReset.addEventListener("click", () => {
+     resActual.textContent = ""
+})
 
 
 function sumar(num1, num2){
